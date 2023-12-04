@@ -106,7 +106,7 @@ model.compile(optimizer='adam',
 
 print("--------------------------------------\n")
 print("Training Started.\n")
-history=model.fit(x_train,y_train,epochs=25,batch_size =128,validation_split=0.1)
+history=model.fit(x_train,y_train,epochs=50,batch_size =128,validation_split=0.1)
 print("Training Finished.\n")
 print("--------------------------------------\n")
 
@@ -147,7 +147,7 @@ def make_prediction(img, model):
     
     except Exception as e:
         print("Error occurred during prediction:", e)      
-make_prediction(r'celebrities_data\roger_federer\roger_federer1.png',model)
+make_prediction(r'celebrities_data\maria_sharapova\maria_sharapova1.png',model)
 print("--------------------------------------\n")
 
 
